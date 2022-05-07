@@ -30,9 +30,7 @@ void my_copy(Iter1 f1, Iter1 e1, Iter2 f2) // to creat a copy and inputs it in a
     {
         *f2++ = *p;
     }
-    return f2;
 }
-
 int main()
 {
     constexpr int size = 10;
@@ -60,6 +58,11 @@ int main()
     print_content(lis);
     cout << "list+";
     print_content(lis, 2);
+    cout << endl;
+
+    cout << "my_copy: ";
+    my_copy(arr.begin(),arr.end(),vec_copy.begin());
+    print_content(vec_copy);
     cout << endl;
 
     array<int, size>::iterator ac;
