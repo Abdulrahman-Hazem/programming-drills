@@ -34,7 +34,7 @@ int main()
     swap_v(x, y); /*the values of x and y will not change because they are pass by values*/
     cout << "after swap_v() x = " << x << " and y = " << y << endl;
 
-    swap_r(x, y); /*the values of x and y will not change because they are pass by reference*/
+    swap_r(x, y); /*the values of x and y will change because they are pass by reference*/
     cout << "after swap_r() x = " << x << " and y = " << y << endl;
     cout << endl;
 
